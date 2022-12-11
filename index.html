@@ -32,6 +32,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#kontakt">Kontakt</a></li>
                 </ul>
             </div>
         </nav>
@@ -221,20 +222,17 @@
                 <div class="resume-section-content">
                     <h2 class="mb-5">Kontakt mig</h2>
                     <!-- modify this form HTML and place wherever you want your form -->
-<form
-  action="https://formspree.io/f/mpznvbnd"
-  method="POST"
->
-  <label>
-    Din emailadresse:
-    <input type="email" name="email">
-  </label>
-  <label>
-    Besked:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
+  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mpznvbnd" method="post">
+  <fieldset id="fs-frm-inputs">
+    <label for="full-name">Navn</label>
+    <input type="text" name="name" id="full-name" placeholder="Navn" required="">
+    <label for="email-address">E-mail adresse</label>
+    <input type="email" name="_replyto" id="email-address" placeholder="email@firma.dk" required="">
+    <label for="message">Besked</label>
+    <textarea rows="5" name="message" id="message" placeholder="Skriv din besked her" required=""></textarea>
+    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+  </fieldset>
+  <input type="submit" value="Submit">
 </form>
                 </div>
             </section>
